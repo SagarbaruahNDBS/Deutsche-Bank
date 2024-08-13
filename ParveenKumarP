@@ -1,0 +1,37 @@
+1. How to login to any site if it is showing an Authentication Pop-Up for Username and Password?
+Solution:
+driver.get("http://username:password@website.com");
+or It can be handled by providing username and password in auth popup
+driver.get("http://github.com");
+Alert authAlert = driver.switchTo().alert();
+authAlert.sendKeys("username" + "\n" + "password");
+authAlert.accept();
+
+
+2. How to click on a hyperlink in Selenium?
+Solution:
+WebElement link = driver.findElement(By.linkText("Link Text"));
+link.click();
+
+3. How do you perform drag-and-drop operations in Selenium WebDriver?
+Solution:
+WebElement sourceElement = driver.findElement(By.id("source"));
+WebElement targetElement = driver.findElement(By.id("target"));
+
+Actions actions = new Actions(driver);
+actions.dragAndDrop(sourceElement, targetElement).perform();
+
+
+4.What are the different types of Selenium navigation commands? How do they help the user? 
+Solution:
+driver.navigate().to("http://github.com");
+driver.navigate().back();
+driver.navigate().forward();
+driver.navigate().refresh();
+
+5.Create a Selenium script in Java to handle an alert on a webpage.
+Solution:
+Alert alert = driver.switchTo().alert();
+alert.accept(); (or) alert.dismiss(); (or) alert.sendKeys("Text");
+
+
