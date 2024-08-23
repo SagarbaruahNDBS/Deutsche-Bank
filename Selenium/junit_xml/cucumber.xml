@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="6.668" tests="1" skipped="0" failures="0" errors="0">
+<testcase classname="Login and actions in Selenium" name="Write code to login and perform actions" time="6.597">
+<system-out><![CDATA[
+Given a user has credentials to login to an application.....................passed
+When popup is displayed , user is logged in successfully....................passed
+Then click on the hyperlink.................................................passed
+And perform drag and drop operations........................................passed
+Then use the navigate commands..............................................passed
+And handle an alert.........................................................passed
+]]></system-out>
+</testcase>
+</testsuite>
